@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 id="title">Movie of the Year 2021</h1>
+            <p id="description">Let's vote for your favorite movie!</p>
+        </header>
+        <main>
+            <form action="" id="survey-form">
+                <div class="formgroup">
+                    <label id="name-label" for="name">Your Name</label>
+                    <input type="text" name="name" id="name" placeholder="James Bond" required>
+                </div>
+
+                <div class="formgroup">
+                    <label id="email-label" for="email">Your E-Mail Adress</label>
+                    <input type="email" name="email" id="email" placeholder="007@bond.com" required>
+                </div>
+
+                <div class="formgroup">
+                    <label id="number-label" for="age">Your Age</label>
+                    <input type="number" name="age" id="number" min="1" max="100" placeholder="1-100">
+                </div>
+
+                <div class="formgroup">
+                    <p>Select your favorite movie</p>
+                    <select id="dropdown" name="movies">
+                        <option value="The Mauritanian">The Mauritanian</option>
+                        <option value="Dune">Dune</option>
+                        <option value="The Father">The Father</option>
+                        <option value="Raya and the last Dragon">Raya and the last Dragon</option>Raya and the last Dragon
+                    </select>
+                </div>
+                <div class="formgroup">
+                    <p>Where did you watch the movie?</p>
+                    <label for="cinema"><input type="radio" name="platform" id="cinema" value="cinema">
+                        Cinema</label>
+                    <label for="vod"><input type="radio" name="platform" id="vod" value="vod">
+                        VOD</label>
+                    <label for="tv"><input type="radio" name="platform" id="tv" value="tv">
+                        TV</label>
+                </div>
+                <div class="formgroup">
+                    <p>What did you like the most?</p>
+                    <label for="story">
+                      <input type="checkbox" name="why" id="story" value="Story">Story</label>
+                    <label for="educational-value">
+                        <input type="checkbox" name="why" id="educational-value" value="educational-value">Educational Value</label>
+                        <label for="quality">
+                            <input type="checkbox" name="why" id="quality" value="quality">Quality</label>
+                </div>
+                <div class="formgroup">
+                    <p>Maybe you want to write a short review?</p>
+                    <textarea name="review" id="review" cols="40" rows="5"></textarea>
+                </div>
+                <button type="submit" id="submit"><i class="fas fa-vote-yea"></i> Submit</button>
+
+            </form>
+        </main>
+    </div>
+
+    <!-- FCC Test Suite -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
